@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stackchan-scrapling-search
+    env: docker
+    dockerfilePath: server/Dockerfile
+    dockerContext: server
+    plan: free
+    region: frankfurt
+    autoDeploy: true
+    healthCheckPath: /health
